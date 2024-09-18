@@ -28,7 +28,7 @@ router.get("/incomplete", async (req, res) => {
 
 router.post("/create", async (req, res) => {
     try {
-        console.log("Request body:", req.body);
+        // console.log("Request body:", req.body);
 
         const { title } = req.body;
 
@@ -50,7 +50,7 @@ router.patch("/update", async (req, res) => {
     try {
         // Updates the task
         const task = await Task.findByPk(id);
-        console.log(task);
+        // console.log(task);
         task.isCompleted = isCompleted;
         await task.save();
 
