@@ -3,4 +3,5 @@ node_modules/
 venv/
 .python-version
 .idea
-__pycache__/git git stagi
+__pycache__/
+.env
