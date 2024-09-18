@@ -1,6 +1,6 @@
 async function toggleIsCompleted(id, isCompleted) {
     try {
-        const res = await fetch("http://localhost:3000/api/tasks", {
+        const res = await fetch("http://localhost:3000/api/tasks/update", {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
