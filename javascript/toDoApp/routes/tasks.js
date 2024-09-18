@@ -1,9 +1,10 @@
 import { Router } from "express";
 import Task from "../models/Task.js";
+import { authenticateToken } from "../middleware/auth.js";
 
 const router = Router();
 
-router.get("/", async (req, res) => {
+router.get("/", authenticateToken, async (req, res) => {
     try {
         const tasks = await Task.findAll();
         res.json(tasks);
@@ -25,7 +26,7 @@ router.get("/incomplete", async (req, res) => {
     }
 });
 
-router.post("/", async (req, res) => {
+router.post("/create", async (req, res) => {
     try {
         console.log("Request body:", req.body);
 
@@ -43,7 +44,7 @@ router.post("/", async (req, res) => {
     }
 });
 
-router.patch("/", async (req, res) => {
+router.patch("/update", async (req, res) => {
     const { id, isCompleted } = req.body;
     // console.log("Request body:", req.body);
     try {

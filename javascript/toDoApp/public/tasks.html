@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ToDo App with SQLite3</title>
+    </head>
+    <body>
+        <h1>ToDo App with SQLite3</h1>
+
+        <h2 id="username"></h2>
+
+        <ul id="task-list"></ul>
+
+        <form id="formToDo" action="/api/tasks" method="POST">
+            <input type="text" id="title" name="title" />
+
+            <button>Add New Entry</button>
+        </form>
+        <br />
+        <br />
+        <div>
+            <button id="show-all">Show All Tasks</button>
+            <button id="show-incomplete">Show Incomplete Tasks</button>
+        </div>
+        <br />
+        <br />
+        <button id="logoutButton">Logout</button>
+        <script type="module" src="./main.js"></script>
+    </body>
+</html>

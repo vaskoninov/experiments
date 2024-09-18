@@ -3,6 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import sequelize from "./db.js";
 import tasks from "./routes/tasks.js";
+import auth from "./routes/auth.js";
 const PORT = process.env.PORT;
 
 const app = express();
@@ -12,9 +13,20 @@ app.use(express.json());
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+app.use("/api/tasks", tasks);
+app.use("/api/auth", auth);
+
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use("/api/tasks", tasks);
+// Serve the index.html at '/'
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
+// Serve the tasks.html at '/tasks'
+app.get("/tasks", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "tasks.html"));
+});
 
 // Synchronize Sequelize with the database and start the server
 

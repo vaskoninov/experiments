@@ -7,8 +7,14 @@ const listTasks = document.getElementById("task-list");
 const form = document.getElementById("formToDo");
 
 async function showAllTasks() {
+    const token = localStorage.getItem("token");
     try {
-        const res = await fetch("http://localhost:3000/api/tasks");
+        const res = await fetch("http://localhost:3000/api/tasks", {
+            method: "GET",
+            headers: {
+                Authorization: `Bearer ${token}`,
+            },
+        });
         if (!res.ok) {
             throw new Error("Failed to fetch posts");
         }
@@ -50,7 +56,7 @@ async function createTask(e) {
     const title = formData.get("title");
     console.log(title);
     try {
-        const res = await fetch("http://localhost:3000/api/tasks", {
+        const res = await fetch("http://localhost:3000/api/tasks/create", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -70,6 +76,23 @@ async function createTask(e) {
 btnShowAll.addEventListener("click", showAllTasks);
 btnShowIncomplete.addEventListener("click", showIncomplete);
 form.addEventListener("submit", createTask);
+
+// For Dev purposes print the username
+const username = localStorage.getItem("username");
+if (username) {
+    document.getElementById("username").textContent = username;
+} else {
+    // Handle the case where the user is not logged in
+    alert("You are not logged in");
+    window.location.href = "/"; // Redirect to login if no username exists
+}
+
+// Logging out
+document.getElementById("logoutButton").addEventListener("click", function () {
+    localStorage.removeItem("token"); // Remove the JWT from localStorage
+    localStorage.removeItem("username"); // Remove the username too
+    window.location.href = "/"; // Redirect to login page
+});
 
 // Handle browser navigation (back/forward)
 // window.addEventListener("popstate", () => {
