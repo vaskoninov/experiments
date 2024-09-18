@@ -12,6 +12,19 @@ router.get("/", async (req, res) => {
     }
 });
 
+router.get("/incomplete", async (req, res) => {
+    try {
+        const tasks = await Task.findAll({
+            where: {
+                isCompleted: false,
+            },
+        });
+        res.json(tasks);
+    } catch (error) {
+        console.log(error);
+    }
+});
+
 router.post("/", async (req, res) => {
     try {
         console.log("Request body:", req.body);
