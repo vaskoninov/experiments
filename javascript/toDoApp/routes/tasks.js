@@ -14,7 +14,7 @@ router.get("/", async (req, res) => {
 
 router.post("/", async (req, res) => {
     try {
-        console.log("Request body:", req.body); // Add this line to log the incoming request body
+        console.log("Request body:", req.body);
 
         const { title } = req.body;
 
@@ -27,6 +27,22 @@ router.post("/", async (req, res) => {
     } catch (error) {
         console.error(error);
         res.status(500).json({ error: "Failed to create task" });
+    }
+});
+
+router.patch("/", async (req, res) => {
+    const { id, isCompleted } = req.body;
+    // console.log("Request body:", req.body);
+    try {
+        // Updates the task
+        const task = await Task.findByPk(id);
+        console.log(task);
+        task.isCompleted = isCompleted;
+        await task.save();
+
+        res.json(task);
+    } catch (error) {
+        console.log(error);
     }
 });
 

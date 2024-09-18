@@ -15,10 +15,16 @@ async function showAllTasks() {
             const taskTitle = document.createElement("span");
             const taskCompleted = document.createElement("input");
 
-            taskEl.setAttribute("data-id", task.id);
+            taskEl.dataset.id = task.id;
 
             taskCompleted.type = "checkbox";
             taskCompleted.checked = task.isCompleted;
+
+            taskCompleted.addEventListener("change", () => {
+                // console.log(taskEl.dataset.id);
+                toggleIsCompleted(taskEl.dataset.id, taskCompleted.checked);
+            });
+
             taskTitle.textContent = task.title;
 
             taskEl.append(taskTitle, taskCompleted);
@@ -46,8 +52,29 @@ async function createTask(e) {
             throw new Error("Failed to create task");
         }
 
-        // Optionally, refresh the task list after creating a task
         showAllTasks();
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+async function toggleIsCompleted(id, isCompleted) {
+    try {
+        const res = await fetch("http://localhost:3000/api/tasks", {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ id, isCompleted }),
+        });
+        if (!res.ok) {
+            throw new Error("Failed to update task");
+        }
+
+        const updatedTask = await res.json();
+        console.log("Updated Task:", updatedTask);
+
+        // showAllTasks();
     } catch (error) {
         console.log(error);
     }

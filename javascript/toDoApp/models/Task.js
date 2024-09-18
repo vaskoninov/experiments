@@ -1,7 +1,6 @@
 import { DataTypes } from "sequelize";
 import sequelize from "../db.js";
 
-// Define the User model
 const Task = sequelize.define(
     "Task",
     {
@@ -9,7 +8,7 @@ const Task = sequelize.define(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        isComplete: {
+        isCompleted: {
             type: DataTypes.BOOLEAN,
             defaultValue: false,
         },

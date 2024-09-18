@@ -22,6 +22,7 @@ app.listen(PORT, async () => {
     try {
         // Sync the database (creates tables if they don't exist)
         await sequelize.sync({ alter: true }); // Force recreates tables; for production, remove this or use `alter: true`
+        // in production use sequelize-cli for migrations
         console.log(`Server running on port ${PORT}`);
     } catch (error) {
         console.error("Unable to connect to the database:", error);
