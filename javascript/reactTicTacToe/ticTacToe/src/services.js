@@ -47,5 +47,5 @@ export function checkBoard(board, index, col) {
 }
 
 export function checkBoardIsFull(board) {
-    return board.flat().some((el) => el === null);
+    return board.flat().every((el) => el !== null);
 }

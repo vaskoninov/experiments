@@ -17,21 +17,9 @@ export default function Board() {
         if (board[index][col] || winner) {
             return;
         }
-        const newBoard = board.map((row, rowInd) => {
-            if (index === rowInd) {
-                const newRow = row.map((el, colInd) => {
-                    if (col === colInd && !el) {
-                        return xIsNext ? "X" : "O";
-                    } else {
-                        return el;
-                    }
-                });
-                setXIsNext(!xIsNext);
-                return newRow;
-            } else {
-                return row;
-            }
-        });
+        const newBoard = board.map((row) => [...row]);
+        newBoard[index][col] = xIsNext ? "X" : "O";
+        setXIsNext(!xIsNext);
         setBoard(newBoard);
         const winningCells = checkBoard(newBoard, index, col);
         if (winningCells) {
@@ -40,7 +28,7 @@ export default function Board() {
             setWinningCells(winningCells);
         }
         const boardIsFull = checkBoardIsFull(newBoard);
-        if (boardIsFull === false) {
+        if (boardIsFull) {
             setBoardFull(true);
         }
     }
