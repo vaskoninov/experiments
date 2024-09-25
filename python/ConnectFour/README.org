@@ -1,3 +1,0 @@
-# Connect Four App
-
-A simple App exploring connection between a basic Python server `http.server`
