@@ -2,4 +2,4 @@
 
 A simple App exploring the WebSockets through the Python.
 
-Based on [Wbesockets Getting Started Tutorial](https://websockets.readthedocs.io/en/stable/intro/index.html)
+Based on [Websockets Getting Started Tutorial](https://websockets.readthedocs.io/en/stable/intro/index.html)
