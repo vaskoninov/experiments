@@ -1,0 +1,21 @@
+body {
+    min-width: 400px;
+    height: auto;
+}
+
+#title {
+    resize: none; /* Allow resizing horizontally */
+    overflow: hidden; /* Hide the scrollbar when unnecessary */
+}
+
+/* Make the second textarea fill the parent width */
+#styled {
+    width: 100%; /* Take full width of the parent */
+    resize: none; /* Prevent resizing */
+    overflow: hidden;
+}
+
+#copyButton {
+    display: block;
+    margin: auto;
+}

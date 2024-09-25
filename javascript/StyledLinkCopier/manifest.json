@@ -1,0 +1,16 @@
+{
+    "name": "StyledLink Copier",
+    "version": "0.1",
+    "description": "copies current url in different styles",
+    "manifest_version": 3,
+    "author": "Vasil Ninov",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Bookmark this"
+    },
+    "permissions": ["tabs", "activeTab"],
+    "icons": {
+        "16": "images/hyperlink16px.png",
+        "128": "images/hyperlink128px.png"
+    }
+}
