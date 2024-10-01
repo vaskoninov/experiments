@@ -7,13 +7,15 @@ export default function Project() {
     return (
         <>
             <h1 className="text-center font-bold text-3xl p-10">Projects</h1>
-            <div className="flex flex-row flex-wrap gap-4 justify-center">
-                {projects &&
-                    projects.map((project) => (
-                        <div key={project.id}>
-                            <SingleProject {...project} />
-                        </div>
-                    ))}
+            <div className="flex items-center justify-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 p-4 grid-">
+                    {projects &&
+                        projects.map((project) => (
+                            <div key={project.id}>
+                                <SingleProject {...project} />
+                            </div>
+                        ))}
+                </div>
             </div>
         </>
     );
