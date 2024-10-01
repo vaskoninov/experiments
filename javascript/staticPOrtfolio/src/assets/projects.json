@@ -11,6 +11,7 @@
             "Docker",
             "Bootstrap"
         ],
+        "image": "/images/fbudgetapp.png",
         "resume": "A budget app allowing people to open an account, to track their incomes and expenses, to filter them and to receive summary data at the end of each month and year. In addition, users can create families sharing data and budgets with their partners, friends or relatives and send them invitations to join the created families."
     },
     {
