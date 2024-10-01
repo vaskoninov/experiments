@@ -1,0 +1,78 @@
+[
+    {
+        "id": 1,
+        "name": "Family Budget App",
+        "languages": ["Python", "JavaScript", "HTML", "CSS"],
+        "technologies": [
+            "Django Web Framework",
+            "Celery",
+            "Redis",
+            "Docker",
+            "Bootstrap"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Teacher Reader",
+        "languages": ["Python", "JavaScript", "HTML", "CSS"],
+        "technologies": [
+            "Django Web Framework",
+            "Django REST Framework",
+            "React"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "StyledLink Copier",
+        "languages": ["JavaScript", "HTML", "CSS"],
+        "technologies": ["JavaScript"]
+    },
+    {
+        "id": 4,
+        "name": "Medal Scraper",
+        "languages": ["JavaScript"],
+        "technologies": ["Puppeteer", "Cheerio"]
+    },
+    {
+        "id": 5,
+        "name": "ToDo App",
+        "languages": ["JavaScript", "HTML", "CSS"],
+        "technologies": ["ExpressJS", "Sequelize", "Node.js"]
+    },
+    {
+        "id": 6,
+        "name": "Tic Tac Toe",
+        "languages": ["JavaScript"],
+        "technologies": ["React"]
+    },
+    {
+        "id": 7,
+        "name": "ConnectFour",
+        "languages": ["Python"],
+        "technologies": ["Websockets"]
+    },
+    {
+        "id": 8,
+        "name": "CLI Tic-Tac-Toe",
+        "languages": ["Python"],
+        "technologies": []
+    },
+    {
+        "id": 9,
+        "name": "Doubly-Linked List",
+        "languages": ["Python"],
+        "technologies": []
+    },
+    {
+        "id": 10,
+        "name": "RingBuffer",
+        "languages": ["Python"],
+        "technologies": []
+    },
+    {
+        "id": 11,
+        "name": "Medal Scrapper",
+        "languages": ["Python"],
+        "technologies": ["beautifulSoup", "requests"]
+    }
+]
