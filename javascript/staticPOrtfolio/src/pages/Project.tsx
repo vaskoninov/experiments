@@ -1,5 +1,5 @@
 import projects from "../assets/projects.json";
-import SingleProject from "../components/SingleProject";
+import SingleProject from "../components/projectComponents/SingleProject";
 
 console.log(projects);
 
