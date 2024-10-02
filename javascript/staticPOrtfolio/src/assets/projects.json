@@ -23,69 +23,79 @@
             "Django REST Framework",
             "React"
         ],
-        "resume": "A app trying to solve a problem many kids have - how to learn easier to read. The kid is able to choose of few fairy tales and the app will load them word by word. The app will listen to the way the kid reads the word and will allow them to continue only if the word was correcttly read. The app has the abilities to write the word pronounced by the kid as well as to read aloud the word if the kid has some issues with reading it."
+        "resume": "A app trying to solve a problem many kids have - how to learn easier to read. The kid is able to choose of few fairy tales and the app will load them word by word. The app will listen to the way the kid reads the word and will allow them to continue only if the word was correcttly read. The app has the abilities to write the word pronounced by the kid as well as to read aloud the word if the kid has some issues with reading it.",
+        "image": "/images/teacher_reader.png"
     },
     {
         "id": 3,
         "name": "StyledLink Copier",
         "languages": ["JavaScript", "HTML", "CSS"],
         "technologies": ["JavaScript"],
-        "resume": "A small Google Chrome extension allowing the user to copy the current URL and title of the page. The user is able to transform the copied information in three formats - Markdown, Ord, Plain TXT. After that, the chosen format is copied to the clipboard and ready for use."
+        "resume": "A small Google Chrome extension allowing the user to copy the current URL and title of the page. The user is able to transform the copied information in three formats - Markdown, Ord, Plain TXT. After that, the chosen format is copied to the clipboard and ready for use.",
+        "image": "/images/styled_copier.png"
     },
     {
         "id": 4,
         "name": "Medal Scraper",
         "languages": ["JavaScript"],
         "technologies": ["Puppeteer", "Cheerio"],
-        "resume": "A small script allowing better understanding of some Web Scrape techniques with JS."
+        "resume": "A small script allowing better understanding of some Web Scrape techniques with JS.",
+        "image": "/images/puppeteer_scraper.png"
     },
     {
         "id": 5,
         "name": "ToDo App",
         "languages": ["JavaScript", "HTML", "CSS"],
         "technologies": ["ExpressJS", "Sequelize", "Node.js"],
-        "resume": "A classical ToDo App allowing exercising basic CRUD operations. The difference is the usage of SQL database to store the data."
+        "resume": "A classical ToDo App allowing exercising basic CRUD operations. The difference is the usage of SQL database to store the data.",
+        "image": "/images/todo_app_sqlite.png"
     },
     {
         "id": 6,
         "name": "Tic-Tac-Toe",
         "languages": ["JavaScript"],
         "technologies": ["React"],
-        "resume": "The Intro to React Tic-Tac-Toe game done as a matrix. It also upgrades some of the features of the original tutorial as coloring the winning sequence and reseting the game."
+        "resume": "The Intro to React Tic-Tac-Toe game done as a matrix. It also upgrades some of the features of the original tutorial as coloring the winning sequence and reseting the game.",
+        "image": "/images/react_tic-tac-toe.png"
     },
     {
         "id": 7,
         "name": "ConnectFour",
         "languages": ["Python"],
         "technologies": ["Websockets"],
-        "resume": "The tutorial of the Python library 'websockets'."
+        "resume": "The tutorial of the Python library 'websockets'.",
+        "image": "/images/connect_four.png"
     },
     {
         "id": 8,
         "name": "CLI Tic-Tac-Toe",
         "languages": ["Python"],
         "technologies": [],
-        "resume": "A class-based Tic-Tac-Toe game in Python."
+        "resume": "A class-based Tic-Tac-Toe game in Python.",
+        "image": "/images/python_tic-tac-toe.png"
     },
     {
         "id": 9,
         "name": "Doubly-Linked List",
         "languages": ["Python"],
         "technologies": [],
-        "resume": "An implementation of a doubly-linked list in Python."
+        "resume": "An implementation of a doubly-linked list in Python.",
+        "image": "/images/doubly.png"
     },
     {
         "id": 10,
         "name": "RingBuffer",
         "languages": ["Python"],
         "technologies": [],
-        "resume": "An implementation of a RingBuffer in Python."
+        "resume": "An implementation of a RingBuffer in Python.",
+        "image": "/images/ring.png"
     },
     {
         "id": 11,
         "name": "Medal Scrapper",
         "languages": ["Python"],
         "technologies": ["beautifulSoup", "requests"],
-        "resume": "A CLI app for scraping some data from the official Olympics 2024 website."
+        "resume": "A CLI app for scraping some data from the official Olympics 2024 website.",
+        "image": "/images/python.scraper.png"
     }
 ]
