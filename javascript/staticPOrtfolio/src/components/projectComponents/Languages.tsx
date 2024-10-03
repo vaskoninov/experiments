@@ -8,7 +8,7 @@ export default function Languages({ languages }: Languages) {
     return (
         <div>
             <h3 className="text-slate-800 font-light text-lg mb-1">
-                Used Languages:
+                Languages:
             </h3>
             <ul>
                 {languages.map((language, index) => (

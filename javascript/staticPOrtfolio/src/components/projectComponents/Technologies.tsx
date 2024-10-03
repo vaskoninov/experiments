@@ -10,7 +10,7 @@ export default function Technologies({ technologies }: Technologies) {
         <>
             <div>
                 <h3 className="text-slate-800 font-light text-lg mb-1">
-                    Used Technologies:
+                    Тechnologies:
                 </h3>
                 <ul>
                     {technologies.map((tech, index) => (

@@ -12,7 +12,8 @@
             "Bootstrap"
         ],
         "image": "/images/fbudgetapp.png",
-        "resume": "A budget app allowing people to open an account, to track their incomes and expenses, to filter them and to receive summary data at the end of each month and year. In addition, users can create families sharing data and budgets with their partners, friends or relatives and send them invitations to join the created families."
+        "resume": "A budget app allowing people to open an account, to track their incomes and expenses, to filter them and to receive summary data at the end of each month and year. In addition, users can create families sharing data and budgets with their partners, friends or relatives and send them invitations to join the created families.",
+        "url": "https://github.com/vaskoninov/familyBudgetApp"
     },
     {
         "id": 2,
@@ -24,7 +25,8 @@
             "React"
         ],
         "resume": "A app trying to solve a problem many kids have - how to learn easier to read. The kid is able to choose of few fairy tales and the app will load them word by word. The app will listen to the way the kid reads the word and will allow them to continue only if the word was correcttly read. The app has the abilities to write the word pronounced by the kid as well as to read aloud the word if the kid has some issues with reading it.",
-        "image": "/images/teacher_reader.png"
+        "image": "/images/teacher_reader.png",
+        "url": "https://github.com/vaskoninov/teacherReader"
     },
     {
         "id": 3,
@@ -32,7 +34,8 @@
         "languages": ["JavaScript", "HTML", "CSS"],
         "technologies": ["JavaScript"],
         "resume": "A small Google Chrome extension allowing the user to copy the current URL and title of the page. The user is able to transform the copied information in three formats - Markdown, Ord, Plain TXT. After that, the chosen format is copied to the clipboard and ready for use.",
-        "image": "/images/styled_copier.png"
+        "image": "/images/styled_copier.png",
+        "url": "https://github.com/vaskoninov/experiments/tree/main/javascript/StyledLinkCopier"
     },
     {
         "id": 4,
@@ -40,7 +43,8 @@
         "languages": ["JavaScript"],
         "technologies": ["Puppeteer", "Cheerio"],
         "resume": "A small script allowing better understanding of some Web Scrape techniques with JS.",
-        "image": "/images/puppeteer_scraper.png"
+        "image": "/images/puppeteer_scraper.png",
+        "url": "https://github.com/vaskoninov/experiments/tree/main/javascript/medalsScraping"
     },
     {
         "id": 5,
@@ -48,7 +52,8 @@
         "languages": ["JavaScript", "HTML", "CSS"],
         "technologies": ["ExpressJS", "Sequelize", "Node.js"],
         "resume": "A classical ToDo App allowing exercising basic CRUD operations. The difference is the usage of SQL database to store the data.",
-        "image": "/images/todo_app_sqlite.png"
+        "image": "/images/todo_app_sqlite.png",
+        "url": "https://github.com/vaskoninov/experiments/tree/main/javascript/toDoApp"
     },
     {
         "id": 6,
@@ -56,7 +61,8 @@
         "languages": ["JavaScript"],
         "technologies": ["React"],
         "resume": "The Intro to React Tic-Tac-Toe game done as a matrix. It also upgrades some of the features of the original tutorial as coloring the winning sequence and reseting the game.",
-        "image": "/images/react_tic-tac-toe.png"
+        "image": "/images/react_tic-tac-toe.png",
+        "url": "https://github.com/vaskoninov/experiments/tree/main/javascript/reactTicTacToe/ticTacToe"
     },
     {
         "id": 7,
@@ -64,7 +70,8 @@
         "languages": ["Python"],
         "technologies": ["Websockets"],
         "resume": "The tutorial of the Python library 'websockets'.",
-        "image": "/images/connect_four.png"
+        "image": "/images/connect_four.png",
+        "url": "https://github.com/vaskoninov/experiments/tree/main/python/ConnectFour"
     },
     {
         "id": 8,
@@ -72,7 +79,8 @@
         "languages": ["Python"],
         "technologies": [],
         "resume": "A class-based Tic-Tac-Toe game in Python.",
-        "image": "/images/python_tic-tac-toe.png"
+        "image": "/images/python_tic-tac-toe.png",
+        "url": "https://github.com/vaskoninov/experiments/tree/main/python/TicTacToe-Class"
     },
     {
         "id": 9,
@@ -80,7 +88,8 @@
         "languages": ["Python"],
         "technologies": [],
         "resume": "An implementation of a doubly-linked list in Python.",
-        "image": "/images/doubly.png"
+        "image": "/images/doubly.png",
+        "url": "https://github.com/vaskoninov/experiments/tree/main/python/doublyLinkedList"
     },
     {
         "id": 10,
@@ -88,7 +97,8 @@
         "languages": ["Python"],
         "technologies": [],
         "resume": "An implementation of a RingBuffer in Python.",
-        "image": "/images/ring.png"
+        "image": "/images/ring.png",
+        "url": "https://github.com/vaskoninov/experiments/tree/main/python/ringArray"
     },
     {
         "id": 11,
@@ -96,6 +106,7 @@
         "languages": ["Python"],
         "technologies": ["beautifulSoup", "requests"],
         "resume": "A CLI app for scraping some data from the official Olympics 2024 website.",
-        "image": "/images/python.scraper.png"
+        "image": "/images/python.scraper.png",
+        "url": "https://github.com/vaskoninov/experiments/tree/main/python/medalP"
     }
 ]

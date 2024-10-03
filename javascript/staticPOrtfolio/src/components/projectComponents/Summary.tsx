@@ -13,7 +13,7 @@ export default function Summary({
         <div>
             <div
                 className={`relative overflow-hidden ${
-                    isExpanded ? "max-h-none" : "max-h-[100px]"
+                    isExpanded ? "max-h-none" : "max-h-[150px]"
                 } transition-all duration-300 ease-in-out`}
             >
                 <h3 className="text-slate-800 font-light text-md mb-2">

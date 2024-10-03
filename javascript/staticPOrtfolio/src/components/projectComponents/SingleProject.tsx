@@ -12,6 +12,7 @@ type SingleProject = {
     technologies: string[];
     resume: string;
     image?: string;
+    url?: string,
 };
 
 export default function SingleProject({
@@ -21,6 +22,7 @@ export default function SingleProject({
     technologies,
     resume,
     image,
+    url
 }: SingleProject) {
     const [isExpanded, setIsExpanded] = useState(false);
 
@@ -30,7 +32,7 @@ export default function SingleProject({
 
     return (
         <div className="container flex flex-col min-w-72 min-h-[600px] p-4 bg-secondBG shadow-md border border-slate-200 rounded-lg max-w-sm">
-            <ProjectTitle title={name} />
+            <ProjectTitle title={name} url={url}/>
             <ProjectImage projectImage={image} />
             <div className="flex flex-row gap-2 mb-2 justify-between">
                 <Languages languages={languages} />
