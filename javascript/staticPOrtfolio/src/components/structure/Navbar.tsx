@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
     return (
-        <nav className="flex p-2 bg-slate-500">
+        <nav className="flex p-2 bg-slate-800">
             <div className="flex flex-1 gap-4">
                 <Link
                     className="text-slate-50 text-xl hover:bg-customBg hover:text-slate-800 p-2"
