@@ -1,6 +1,6 @@
 export default function Home() {
     return (
-        <div className="flex flex-col lg:flex-row w-full flex-1">
+        <div className="flex flex-col lg:flex-row w-full flex-1 bg-customBg">
             <div className="w-full lg:w-1/2 flex items-center justify-center p-6">
                 <img
                     src="/images/personal.jpg"
@@ -9,7 +9,7 @@ export default function Home() {
                 />
             </div>
 
-            <div className="w-full lg:w-1/2 flex flex-col justify-center items-start bg-slate-500 text-customBg p-6 md:p-8 lg:p-12">
+            <div className="w-full lg:w-1/2 flex flex-col justify-center items-start bg-slate-500 text-secondBG p-6 md:p-8 lg:p-12">
                 <strong className="text-left mb-4 text-2xl md:text-3xl xl:text-4xl">
                     Hello, My name is Vasil Ninov
                 </strong>

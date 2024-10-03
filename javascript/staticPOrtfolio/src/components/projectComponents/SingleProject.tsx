@@ -29,7 +29,7 @@ export default function SingleProject({
     };
 
     return (
-        <div className="container flex flex-col min-w-72 min-h-[600px] p-4 bg-slate-50 shadow-md border border-slate-200 rounded-lg max-w-sm transition-transform transform hover:scale-105 hover:shadow-2xl">
+        <div className="container flex flex-col min-w-72 min-h-[600px] p-4 bg-secondBG shadow-md border border-slate-200 rounded-lg max-w-sm">
             <ProjectTitle title={name} />
             <ProjectImage projectImage={image} />
             <div className="flex flex-row gap-2 mb-2 justify-between">

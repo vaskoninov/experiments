@@ -5,6 +5,7 @@ export default {
         extend: {
             colors: {
                 customBg: "#F4F2EE",
+                secondBG: "#FFFFFF",
             },
         },
     },
