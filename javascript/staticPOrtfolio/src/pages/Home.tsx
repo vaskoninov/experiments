@@ -9,11 +9,11 @@ export default function Home() {
                 />
             </div>
 
-            <div className="w-full lg:w-1/2 flex flex-col justify-center items-start bg-slate-500 text-secondBG p-6 md:p-8 lg:p-12">
-                <strong className="text-left mb-4 text-2xl md:text-3xl xl:text-4xl">
-                    Hello, My name is Vasil Ninov
+            <div className="w-full lg:w-1/2 flex flex-col justify-center items-start bg-slate-500  p-6 md:p-8 lg:p-12">
+                <strong className="text-left mb-4 text-2xl md:text-3xl xl:text-4xl text-secondBG">
+                    Hello, my name is Vasil Ninov
                 </strong>
-                <p className="text-left mb-4 text-base md:text-lg lg:text-xl">
+                <p className="text-left mb-4 text-base md:text-lg lg:text-xl ">
                     After two decades of experience in education, I made the
                     exciting transition to the world of software development. My
                     background as a history teacher and assistant dean has honed

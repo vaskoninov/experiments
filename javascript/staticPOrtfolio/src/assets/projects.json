@@ -32,7 +32,7 @@
         "id": 3,
         "name": "StyledLink Copier",
         "languages": ["JavaScript", "HTML", "CSS"],
-        "technologies": ["JavaScript"],
+        "technologies": [],
         "resume": "A small Google Chrome extension allowing the user to copy the current URL and title of the page. The user is able to transform the copied information in three formats - Markdown, Ord, Plain TXT. After that, the chosen format is copied to the clipboard and ready for use.",
         "image": "/images/styled_copier.png",
         "url": "https://github.com/vaskoninov/experiments/tree/main/javascript/StyledLinkCopier"

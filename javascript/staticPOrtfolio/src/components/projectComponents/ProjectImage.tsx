@@ -9,7 +9,7 @@ export default function ProjectImage({ projectImage }: Image) {
             <img
                 src={projectImage}
                 alt="visual representation of the app"
-                className="absolute top-0 left-0 w-full h-full object-contain rounded"
+                className="absolute top-0 left-0 w-full h-full object-contain rounded border-2"
             />
         </div>
     );
