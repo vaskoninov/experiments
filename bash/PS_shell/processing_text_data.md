@@ -25,3 +25,24 @@
 
 ## Grep
 - 
+
+## Diff
+- diff [options] [file1] [file2]
+
+## NL
+- displays file content with line numbers
+
+## TR
+- tr - translating or deleting characters from input
+
+## SORT
+
+## Uniq
+sort file | uniq 
+## Cut
+- you can cut columns of a file or header, footer
+
+## Paste
+- you can merge lines
+
+## Join

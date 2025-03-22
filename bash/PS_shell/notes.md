@@ -160,14 +160,41 @@ file_name
 - seems as simplified C 
 
 - you can create scripts in it and run them with awk -f 
+- ps | awk '{print $1}'
+- awk -F ':' '{print $1}' /etc/passwd - change separator and prints content in column 1
 
 
+## Diff 
+
+- takes as two arguments two files
+- -c option provides context print 
+- -u gives similar view
+
+## Compressing files 
+- tar -group and archive 
+- tar cvf name_of_archive files_to_be_archive
+-z add gzip compression 
+-j bzip2 
+-t allows to view in archive 
+-x extract files 
+
+## Expanding
+
+- echo {A..Z} will expand the whole alphabet
+- echo {A..Z}{1..10} - nesting 
+
+- xargs - do recursevily for each line 
 
 
+## Processes and Jobs
 
+- ps
+- pgrep
+- top
+- htop
 
-
-
+- ps aux | head
+- ps aux | grap python
 
 
 
