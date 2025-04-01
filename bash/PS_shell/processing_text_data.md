@@ -46,3 +46,25 @@ sort file | uniq
 - you can merge lines
 
 ## Join
+- similar to SQL command `join`
+- join [file1] [file2] 
+
+
+## Sed
+- 
+
+## Awk
+
+```sh
+awk 'BEGIN {FS=":"; OFS="\t" } {print $1, $2, $3, $6}' /etc/passwd
+```
+```sh
+ll | awk 'BEGIN {sum=0} {sum = sum + $5} END {print sum}'
+```
+
+```sh
+echo "Hello Merry Weather" | awk '{ print(substr($0, 1,5))}'
+```
+```sh
+ echo "this is a string" | awk '{ if (length($0) > 10) print "string is too long"; else print length($0) }'
+```
