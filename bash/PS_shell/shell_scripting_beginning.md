@@ -110,14 +110,84 @@ user_name[second]=smith
 
 ```
 
+## Conditional Statements
+
+- if else then elif else fi 
+
+```bash
+
+# older POSIX way
+declare -i days=30
+if [ $days -lt 1];then echo "Enter correct value";fi # single [] for simple checks 
+
+if [ $days -lt 1] || [ $days -gt 30 ];
+then echo "Enter correct value"; fi 
 
 
+# modern Bash/Zsh way
+
+declare -i days=30
+if (( days < 1 || days > 30 ));
+then echo "Enter correct value"; fi 
+```
+- AND / OR 
+
+```bash
+
+echo hello || echo bye
+echo hello && echo bye 
+```
+- Arithmetic evaluations
+- Regex
+- test 
+- string comparisons
+- CASES 
+
+> [! Important]
+> $? prints the result of the last command 
+
+> [! Important]
+> use `read` to read user input 
+
+## Strings and Regex 
+[[]] - for partial strings, regex and advanced conditionals
+
+```bash
+
+declare -l user_name
+read user_name
+Bob
+
+[ $user_name == 'bob' ] && echo "user is bob"
+user is bob
 
 
+declare -l browser
+read browser
+Firefox
 
+[[ $browser == *fox ]] && echo "The broweser's Firefox"
 
+declare -l test_var
+read test_var 
+color
 
+[[ $test_var =~ colou?r ]] && echo "${BASH_REMATCH[0]}" # BASH_REMATCH is the match array
 
+color 
+
+```
+> [! Important]
+```bash 
+[[ $user == *potter* ]]
+result=$?  # $? contains the exit status (0 for true, 1 for false)
+
+if (( result == 0 )); then
+    echo "Yes"
+else
+    echo "No"
+fi
+```
 
 
 
